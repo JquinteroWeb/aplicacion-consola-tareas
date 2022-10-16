@@ -50,8 +50,8 @@ const main = async () => {
         break;
     }
     await pausa();
+    guardarDB(tareas._listadoArr);
   } while (opt !== "0");
-  guardarDB(tareas._listadoArr);
   
 };
 
